@@ -3,15 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metas importantes para la mejora del SEO -->
+    <meta
+      name="description"
+      content="DigiProd ofrece productos y servicios digitales innovadores para potenciar tu negocio. Conocé nuestras soluciones de software."
+    />
+    <meta
+      name="keywords"
+      content="DigiProd, productos digitales, software, servicios digitales, tecnología, soluciones digitales"
+    />
+    <meta name="author" content="DigiProd S.A." />
+
     <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/formulario.css" />
     <link rel="icon" href="../img/logo.png" />
-    <title>Formulario</title>
+    <title>DigiProd - Contactanos</title>
   </head>
   <body>
     <header>
-      <a href="../index.html"
-        ><img src="../img/logo.png" alt="logo de la empresa" class="imagen"
-      /></a>
+      <a href="../index.html" class="titulo"><h1>D</h1></a>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -21,6 +32,48 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <!--  Section del formulario dentro de el main que contiene toda la pagina-->
+      <section class="formularioBasico">
+        <h2>Solicitá tu presupuesto</h2>
+        <form>
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="servicio">Servicio</label>
+          <select id="servicio" name="servicio">
+            <option value="web">Sitio Web</option>
+            <option value="app">App Móvil</option>
+            <option value="consultoria">Consultoría</option>
+          </select>
+          <!-- textarea para poner los comentarios -->
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+
+          <!--  Checkbox's-->
+          <label>
+            <input type="checkbox" name="acepto" required />
+            Acepto ser contactado
+          </label>
+
+          <label>
+            <input type="checkbox" disabled checked />
+            Newsletter mensual (activo)
+          </label>
+          <!--  Boton para enviar la informacion-->
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2025 DigiProd S.A. Todos los derechos reservados.</p>
+        <p>Contacto: info@digiprod.com | Tel: +54 11 4567-8900</p>
+      </div>
+    </footer>
   </body>
 </html>

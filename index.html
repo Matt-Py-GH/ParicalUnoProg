@@ -1,23 +1,25 @@
-<!-- - Encabezado con el nombre o logo de la empresa y un menú de navegación.
-- Una sección descriptiva sobre la empresa (quiénes somos, misión, visión o historia).
-- Otra sección que mencione sus servicios o áreas de trabajo.
-- Un pie de página con información de contacto.
-- Estilo limpio, colores armónicos, uso de grillas o flexbox para organizar la información. -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="icon" href="./img/logo.png" />
-    <title>Home</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Metas importantes para la mejora del SEO -->
+  <meta name="description" content="DigiProd ofrece productos y servicios digitales innovadores para potenciar tu negocio. Conocé nuestras soluciones de software." />
+  <meta name="keywords" content="DigiProd, productos digitales, software, servicios digitales, tecnología, soluciones digitales" />
+  <meta name="author" content="DigiProd S.A." />
+  
+  
+  <!-- Favicon y CSS -->
+  <link rel="icon" href="./img/logo.png" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>DigiProd - Home</title>
+</head>
+
     <header>
-      <a href="./index.html"
-        ><img src="./img/logo.png" alt="logo de la empresa" class="imagen"
-      /></a>
+      <!-- Logo principal de la pagina: una "D" de DigiProd -->
+      <a href="./index.html" class="titulo"><h1>D</h1></a>
+      <!-- Nav de tres opciones para navegar sobre el sitio web -->
       <nav>
         <ul>
           <li><a href="./index.html" class="active">Home</a></li>
@@ -26,6 +28,61 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Se utilizó una etiqueta main para el contenido principal de la pagina, abajo del header -->
+    <main>
+      <!-- Seccion principal de la descripción sobre la empresa -->
+      <section class="descripcion">
+        <h1>¿Quiénes somos?</h1>
+        <p>
+          DigiProd es una empresa innovadora dedicada a la producción digital de
+          contenidos interactivos. Desde nuestra fundación en 2018, nos
+          especializamos en crear experiencias digitales que conectan marcas con
+          personas a través del diseño, la tecnología y la creatividad.
+        </p>
+        <p>
+          Nuestra misión es empoderar a negocios de todos los tamaños con
+          soluciones digitales personalizadas que generen impacto y valor
+          sostenible. Nuestra visión es liderar la transformación digital en
+          América Latina.
+        </p>
+      </section>
+
+      <!-- Articulo usado para describir los servicios de la misma, hecho con una lista desordenada -->
+      <article class="serviciosEmpresa">
+        <h2>Áreas y Servicios</h2>
+        <ul>
+          <li>
+            <!-- Uso del strong para resaltar en la lista -->
+            <strong>Diseño Web:</strong> Desarrollo de sitios web responsivos,
+            optimizados y atractivos.
+          </li>
+          <li>
+            <strong>Marketing Digital:</strong> Estrategias de redes sociales,
+            SEO y campañas publicitarias.
+          </li>
+          <li>
+            <strong>Producción Multimedia:</strong> Videos promocionales,
+            animaciones y edición audiovisual.
+          </li>
+          <li>
+            <strong>Desarrollo de Apps:</strong> Aplicaciones móviles para iOS y
+            Android con enfoque UX/UI.
+          </li>
+          <li>
+            <strong>Consultoría Digital:</strong> Asesoramiento tecnológico y
+            digitalización de procesos.
+          </li>
+        </ul>
+      </article>
+    </main>
+    <!-- Cierre del main y footer de la página, en 2 párrafos y un bloque pegado abajo-->
+    <footer>
+      <div class="footer">
+        <p>&copy; 2025 DigiProd S.A. Todos los derechos reservados.</p>
+        <p>Contacto: info@digiprod.com | Tel: +54 11 4567-8900</p>
+      </div>
+    </footer>
 
     <main></main>
   </body>

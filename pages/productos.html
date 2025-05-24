@@ -3,15 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metas importantes para la mejora del SEO -->
+    <meta
+      name="description"
+      content="DigiProd ofrece productos y servicios digitales innovadores para potenciar tu negocio. Conocé nuestras soluciones de software."
+    />
+    <meta
+      name="keywords"
+      content="DigiProd, productos digitales, software, servicios digitales, tecnología, soluciones digitales"
+    />
+    <meta name="author" content="DigiProd S.A." />
+
     <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/productos.css" />
     <link rel="icon" href="../img/logo.png" />
-    <title>Productos</title>
+    <title>DigiProd - Productos</title>
   </head>
   <body>
     <header>
-      <a href="../index.html"
-        ><img src="../img/logo.png" alt="logo de la empresa" class="imagen"
-      /></a>
+      <a href="../index.html" class="titulo"><h1>D</h1></a>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -21,6 +32,53 @@
       </nav>
     </header>
 
-    <main></main>
+    <!-- Main contenedor del input de busqueda y las cards que presentan los servicios ofrecidos de la empresa-->
+    <main>
+      <section class="busquedaSection">
+        <input
+          type="text"
+          placeholder="Buscar productos..."
+          class="inputBusqueda"
+        />
+        <span class="iconoBusqueda">🔍</span>
+      </section>
+
+      <!-- Section con los 3 divs, donde cada uno representa una card en la pagina de productos-->
+      <section class="productosSection">
+        <div class="productoCard">
+          <h3 class="nombreProducto">Gestor de Proyectos</h3>
+          <p class="descripcionProducto">
+            Organizá tareas, asigná recursos y seguí el progreso de tus equipos.
+          </p>
+          <p class="precioProducto">Suscripción: $12.99 USD/mes</p>
+          <button class="botonComprar">Suscribirse</button>
+        </div>
+
+        <div class="productoCard">
+          <h3 class="nombreProducto">CRM Inteligente</h3>
+          <p class="descripcionProducto">
+            Automatizá ventas y soporte con este CRM completo.
+          </p>
+          <p class="precioProducto">Suscripción: $19.99 USD/mes</p>
+          <button class="botonComprar">Suscribirse</button>
+        </div>
+
+        <div class="productoCard">
+          <h3 class="nombreProducto">Facturación Online</h3>
+          <p class="descripcionProducto">
+            Emití facturas electrónicas y controlá tus ingresos.
+          </p>
+          <p class="precioProducto">Suscripción: $9.99 USD/mes</p>
+          <button class="botonComprar">Suscribirse</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2025 DigiProd S.A. Todos los derechos reservados.</p>
+        <p>Contacto: info@digiprod.com | Tel: +54 11 4567-8900</p>
+      </div>
+    </footer>
   </body>
 </html>
