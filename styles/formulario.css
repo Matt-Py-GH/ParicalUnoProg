@@ -12,6 +12,7 @@ main {
   background-color: #333;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
 }
 
 .formularioBasico h2 {
@@ -65,11 +66,10 @@ main {
   background-color: #005fa3;
 }
 
-/* Responsive */
 @media screen and (max-width: 600px) {
   .formularioBasico {
     padding: 20px;
-    margin: 30px 15px;
+    margin: 130px 15px;
   }
 
   .formularioBasico h2 {
